@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Añadir Cargo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="max-w-4xl mx-auto p-5">
+        <!-- Cargo Section -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <h2 class="font-bold mb-4">CARGO</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
+                <input type="text" placeholder="Nombre Cargo" class="border border-gray-300 rounded p-2">
+                <textarea placeholder="Responsabilidades" class="border border-gray-300 rounded p-2"></textarea>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <select class="border border-gray-300 rounded p-2">
+                    <option selected>Nivel 1</option>
+                    <!-- Other options -->
+                </select>
+                <select class="border border-gray-300 rounded p-2">
+                    <option selected>Administración</option>
+                    <!-- Other options -->
+                </select>
+            </div>
+        </div>
+
+        <!-- Requisitos Section -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <h2 class="font-bold mb-4">REQUISITOS</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                    <h3 class="font-semibold mb-2">Formación requerida</h3>
+                    <div class="flex items-center space-x-2 mb-2">
+                        <input type="text" placeholder="Conocimientos amplios de ISO 9001" class="border border-gray-300 rounded p-2 flex-1">
+                        <button class="bg-green-500 text-white rounded p-2">AÑADIR</button>
+                        <button class="bg-red-500 text-white rounded p-2">QUITAR</button>
+                    </div>
+                    <!-- Additional items will be here -->
+                </div>
+                <div>
+                    <h3 class="font-semibold mb-2">Experiencia</h3>
+                    <textarea placeholder="Experiencia" class="border border-gray-300 rounded p-2 h-24"></textarea>
+                </div>
+                <div class="md:col-span-2">
+                    <h3 class="font-semibold mb-2">Habilidades</h3>
+                    <textarea placeholder="Habilidades" class="border border-gray-300 rounded p-2 h-24"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <!-- Documentos Section -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <h2 class="font-bold mb-4">DOCUMENTOS</h2>
+            <div class="flex items-center space-x-2">
+                <input type="file" id="fileInput" class="hidden" />
+                <label for="fileInput" class="bg-orange-500 text-white rounded p-2 cursor-pointer">ADJUNTAR</label>
+                <span id="fileName">Ninguno archivo seleccionado</span>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-between">
+            <button class="bg-yellow-500 text-white rounded p-3">LIMPIAR CAMPOS</button>
+            <button class="bg-green-500 text-white rounded p-3">GUARDAR</button>
+        </div>
+    </div>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto p-6">
+        <!-- Title -->
+        <h2 class="text-4xl font-semibold mb-6">Equipamiento</h2>
+
+        <!-- Filter Section -->
+        <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4 grid grid-cols-12 gap-4">
+                <!-- Filter: Name -->
+                <div class="col-span-2">
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" type="text" placeholder="Nombre">
+                </div>
+
+                <!-- Filter: Code -->
+                <div class="col-span-2">
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" type="text" placeholder="Código">
+                </div>
+
+                <!-- Filter: Person in charge -->
+                <div class="col-span-2">
+                    <select class="block appearance-none w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white">
+                        <option>TODOS</option>
+                        <!-- Add more options here -->
+                    </select>
+                </div>
+
+                <!-- Filter: Start Date -->
+                <div class="col-span-2">
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" type="date" placeholder="Fecha Inicio">
+               
+                </div>
+
+                <!-- Filter: End Date -->
+                <div class="col-span-2">
+                    <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white" type="date" placeholder="Fecha Fin">
+                </div>
+    
+                <!-- Search Button -->
+                <div class="col-span-2">
+                    <button class="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded" type="button">
+                        BUSCAR
+                    </button>
+                </div>
+    
+                <!-- Checkboxes for status -->
+                <div class="col-span-12 flex items-center mt-4">
+                    <label class="inline-flex items-center">
+                        <input type="checkbox" class="form-checkbox text-orange-500">
+                        <span class="ml-2">Próx. a Revisar</span>
+                    </label>
+                    <label class="inline-flex items-center ml-6">
+                        <input type="checkbox" class="form-checkbox text-green-500">
+                        <span class="ml-2">Próx. a Calibrar</span>
+                    </label>
+                    <label class="inline-flex items-center ml-6">
+                        <input type="checkbox" class="form-checkbox text-blue-500">
+                        <span class="ml-2">Reparados</span>
+                    </label>
+                    <label class="inline-flex items-center ml-6">
+                        <input type="checkbox" class="form-checkbox text-purple-500">
+                        <span class="ml-2">Revisados</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Table Section -->
+        <div class="bg-white shadow-md rounded mb-6 overflow-x-auto">
+            <table class="min-w-full leading-normal">
+                <thead>
+                    <tr>
+                        <th class="px-5 py-3 border-b-2 border-gray-200 bg-gray-100 text-left text-xs font-semibold text-gray-600 uppercase tracking-wider">
+                            NOMBRE
+                        </th>
+                        <!-- Add all the headers based on the screenshot provided -->
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Equipment data rows will be dynamically inserted here -->
+                </tbody>
+            </table>
+        </div>
+    
+        <!-- Action Buttons -->
+        <div class="flex justify-between">
+            <div>
+                <button class="bg-green-500 hover:bg-green-700 text
+                -white font-bold py-2 px-4 rounded" type="button">
+                AÑADIR
+                </button>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-4" type="button">
+                INVENTARIO
+                </button>
+                <button class="bg-yellow-500 hover:bg-yellow-700 text-white font-bold py-2 px-4 rounded ml-4" type="button">
+                CRONOGRAMA
+                </button>
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded ml-4" type="button">
+                GENERAR INFORME
+                </button>
+                </div>
+                <button class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" type="button">
+                LIMPIAR CAMPOS
+                </button>
+                </div>
+                </div>
+                <!-- TailwindCSS Script for interactivity like dropdowns, modals, etc. -->
+<script>
+    // TailwindCSS initialization code
+    // Include any JavaScript needed for interactive components
+</script>
+</body>
+</html>

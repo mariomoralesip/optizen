@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRHH Index</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Header -->
+    <div class="bg-white px-4 py-2 shadow-md">
+        <h1 class="text-xl font-bold">RRHH</h1>
+    </div>
+
+    <!-- Filters -->
+    <div class="flex flex-wrap gap-4 p-4 bg-white">
+        <input type="text" placeholder="Empleado" class="border border-gray-300 rounded p-2">
+        <select class="border border-gray-300 rounded p-2">
+            <option selected>TODOS</option>
+            <!-- Other options -->
+        </select>
+        <input type="text" placeholder="Depart / Proceso" class="border border-gray-300 rounded p-2">
+        <select class="border border-gray-300 rounded p-2">
+            <option selected>TODAS</option>
+            <!-- Other options -->
+        </select>
+        <button class="bg-orange-500 text-white rounded p-2">BUSCAR</button>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex justify-between p-4 bg-white">
+        <div>
+            <button class="bg-green-500 text-white rounded p-2">AÑADIR</button>
+            <button class="bg-yellow-500 text-white rounded p-2">GENERAR INFORME</button>
+        </div>
+    </div>
+
+    <!-- Table -->
+    <div class="overflow-x-auto bg-white p-4">
+        <table class="min-w-full leading-normal">
+            <thead>
+                <tr>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">APELLIDOS</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">NOMBRE</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">CARGO</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">DEPART / PROCESO</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">CENTRO TRABAJO</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">SITUACIÓN</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">FECHA ALTA</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">FECHA BAJA</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows with data -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Curso</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="max-w-7xl mx-auto p-5">
+        <!-- Course / Center Data Section -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <h1 class="text-xl font-bold mb-4">DATOS CURSO / CENTRO</h1>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+                <input type="text" placeholder="Nombre Curso" class="border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Fecha Inicio" class="border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Fecha Fin" class="border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Horario" class="border border-gray-300 rounded p-2">
+                <select class="border border-gray-300 rounded p-2">
+                    <option>INSTALACIONES DE ELECTROS</option>
+                    <!-- Additional options -->
+                </select>
+                <select class="border border-gray-300 rounded p-2">
+                    <option>distancia</option>
+                    <option>mixta</option>
+                    <option>presencial</option>
+                    <!-- Additional options -->
+                </select>
+                <input type="text" placeholder="Dirección" class="border border-gray-300 rounded p-2">
+                <input type="text" placeholder="Duración [Horas]" class="border border-gray-300 rounded p-2">
+                <!-- Additional fields as per layout -->
+            </div>
+        </div>
+
+        <!-- Participants Section -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <h2 class="font-bold mb-4">PARTICIPANTES</h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 mb-4">
+                <!-- Participants fields and add button -->
+                <input type="text" placeholder="Participante" class="border border-gray-300 rounded p-2">
+                <select class="border border-gray-300 rounded p-2">
+                    <option>Actualización conocimientos</option>
+                    <option>Adquisición de nuevos conocimientos</option>
+                    <option>Incorporación a la empresa</option>
+                    <!-- Additional options -->
+                </select>
+                <button class="bg-green-500 text-white rounded p-2">AÑADIR</button>
+                <!-- Add your other fields here -->
+            </div>
+        </div>
+
+        <!-- Documents Section -->
+        <div class="bg-white p-6 rounded-md shadow-md mb-6">
+            <h2 class="font-bold mb-4">DOCUMENTOS</h2>
+            <div class="flex items-center space-x-2">
+                <button class="bg-orange-500 text-white rounded p-2">ADJUNTAR</button>
+                <span>Seleccionar archivo Ninguno archivo selec.</span>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-end gap-4">
+            <button class="bg-yellow-500 text-white rounded p-3">LIMPIAR CAMPOS</button>
+            <button class="bg-green-500 text-white rounded p-3">GUARDAR</button>
+        </div>
+    </div>
+
+</body>
+</html>

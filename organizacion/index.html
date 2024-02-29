@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organización</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Top Bar -->
+    <div class="bg-white px-4 py-2 shadow-md">
+        <h1 class="text-xl font-bold">Organización</h1>
+    </div>
+
+    <!-- Filters -->
+    <div class="flex gap-2 p-4 bg-white">
+        <div>
+            <label for="cargo">Departamento</label>
+            <select id="cargo" class="border border-gray-300 rounded">
+                <option>TODOS</option>
+                <!-- Other options -->
+            </select>
+        </div>
+        <div>
+            <label for="depart">Cargo</label>
+            <select id="depart" class="border border-gray-300 rounded">
+                <option>TODOS</option>
+                <!-- Other options -->
+            </select>
+        </div>
+        <input type="search" placeholder="Buscar" class="border border-gray-300 rounded p-2">
+        <button class="bg-blue-500 text-white rounded p-2">BUSCAR</button>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="flex gap-2 p-4 bg-white">
+        <button class="bg-green-500 text-white rounded p-2">AÑADIR</button>
+        <button class="bg-yellow-500 text-white rounded p-2">GENERAR INFORME</button>
+        <button class="bg-purple-500 text-white rounded p-2">ORGANIGRAMA</button>
+    </div>
+
+    <!-- Table -->
+    <div class="overflow-x-auto">
+        <table class="min-w-full leading-normal">
+            <thead>
+                <tr>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">CARGO</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">NIVEL</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">DEPART / PROCESO</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">DEPENDENCIA</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">RESPONSABILIDADES</th>
+                    <th class="border-b-2 border-gray-200 p-4 text-left">ACCIONES</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Table rows with data -->
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

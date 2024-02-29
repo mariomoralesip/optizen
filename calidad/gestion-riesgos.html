@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Identificación de Riesgos</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container my-5">
+    <div class="card shadow">
+      <div class="card-body">
+        <h1 class="card-title">Identificación de Riesgos</h1>
+        <form id="gestionriesgos">
+          <div class="mb-3">
+            <label for="id_riesgo" class="form-label">ID Riesgo:</label>
+            <input type="text" class="form-control" id="id_riesgo" name="id_riesgo" maxlength="70">
+          </div>
+
+          <div class="mb-3">
+            <label for="descripcion_riesgo" class="form-label">Descripción del riesgo:</label>
+            <input type="text" class="form-control" id="descripcion_riesgo" name="descripcion_riesgo" maxlength="100">
+          </div>
+
+          <div class="mb-3">
+            <label for="fecha_riesgo" class="form-label">Fecha de identificación:</label>
+            <input type="date" class="form-control" id="fecha_riesgo" name="fecha_riesgo">
+          </div>
+
+          <div class="mb-3">
+            <label for="categoria_riesgo" class="form-label">Categoría:</label>
+            <select class="form-select" id="categoria_riesgo" name="categoria_riesgo">
+              <option value="tecnico">Técnico</option>
+              <option value="legal">Legal</option>
+              <option value="construccion">Construcción</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+
+
+          <div class="mb-3">
+            <label for="probabilidad_ocurrencia" class="form-label">Probabilidad de ocurrencia:</label>
+            <select class="form-select" id="probabilidad_ocurrencia" name="probabilidad_ocurrencia">
+              <option value="baja">Baja</option>
+              <option value="media">Media</option>
+              <option value="alta">Alta</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="impacto_potencial" class="form-label">Impacto potencial:</label>
+            <select class="form-select" id="impacto_potencial" name="impacto_potencial">
+              <option value="bajo">Bajo</option>
+              <option value="medio">Medio</option>
+              <option value="alto">Alto</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="estrategia_respuesta" class="form-label">Estrategia de respuesta:</label>
+            <select class="form-select" id="estrategia_respuesta" name="estrategia_respuesta">
+              <option value="evitar">Evitar</option>
+              <option value="transferir">Transferir</option>
+              <option value="mitigar">Mitigar</option>
+              <option value="aceptar">Aceptar</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="medida_propuesta" class="form-label">Medida de mitigación propuesta:</label>
+            <input type="text" class="form-control" id="medida_propuesta" name="medida_propuesta" maxlength="100">
+          </div>
+
+          <div class="mb-3">
+            <label for="responsable_riesgo" class="form-label">Responsable de la gestión del riesgo:</label>
+            <input type="text" class="form-control" id="responsable_riesgo" name="responsable_riesgo" maxlength="100">
+          </div>
+
+
+          <button type="submit" class="btn btn-success">Registrar</button>
+          <a href="page2.html" class="btn btn-primary">Siguiente</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank" class="mt-4">
+    <div class="mb-3">
+      <label for="archivoSubido" class="form-label">Sube un archivo:</label>
+      <input type="file" class="form-control" id="archivoSubido" name="archivosubido">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar datos</button>
+  </form>
+
+  <script src="script.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+</html>
+
+<!-- agregar unas graficas y metricas -->

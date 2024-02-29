@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard de Organización</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+      <div class="sidebar-heading">OptiZen</div>
+      <div class="list-group list-group-flush">
+        <!-- Agregar aquí más elementos de la lista según sea necesario -->
+        <a href="#" class="list-group-item list-group-item-action bg-light">Indicadores y Objetivos</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Organización</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">RRHH</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Procesos</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Formación</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Documentación</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Equipamiento</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Incidencias y Acciones Correctivas</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Gesión de riesgos</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Gesión Ambiental</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Auditorías</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Requisitos legales</a>
+        <a href="#" class="list-group-item list-group-item-action bg-light">Asistentes Virtuales</a>
+      </div>
+    </div>
+    <!-- /#sidebar-wrapper -->
+
+    <!-- Page Content -->
+    <div id="page-content-wrapper">
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>
+      </nav>
+
+      <div class="container-fluid">
+        <h1 class="mt-4">Organización</h1>
+        <!-- Contenido principal -->
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Cargo</th>
+                <th>Nivel</th>
+                <th>Departamento/Proceso</th>
+                <th>Dependencia</th>
+                <th>Responsabilidades</th>
+              </tr>
+            </thead>
+            <tbody>
+              <!-- Las filas de la tabla se llenarán dinámicamente con datos -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- /#page-content-wrapper -->
+
+  </div>
+  <!-- /#wrapper -->
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+  <script>
+    // Script para alternar la visibilidad del sidebar
+    $("#menu-toggle").click(function(e) {
+      e.preventDefault();
+      $("#wrapper").toggleClass("toggled");
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Equipo</title>
+    <!-- Incluir solo los estilos necesarios de Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <div class="max-w-7xl mx-auto p-5">
+
+        <!-- Sección Datos del equipo -->
+        <section class="mb-6">
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <h1 class="text-xl font-bold mb-4">DATOS EQUIPAMIENTO</h1>
+                <!-- Formulario de datos del equipo -->
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+                        <!-- Nombre -->
+                        <div>
+                            <label for="nombre" class="block mb-1">Nombre:</label>
+                            <input type="text" id="nombre" placeholder="Nombre" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Código -->
+                        <div>
+                            <label for="codigo" class="block mb-1">Código:</label>
+                            <input type="text" id="codigo" placeholder="Código" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Número de serie -->
+                        <div>
+                            <label for="serie" class="block mb-1">Número de serie:</label>
+                            <input type="text" id="serie" placeholder="Número de serie" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Marca -->
+                        <div>
+                            <label for="marca" class="block mb-1">Marca:</label>
+                            <input type="text" id="marca" placeholder="Marca" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Modelo -->
+                        <div>
+                            <label for="modelo" class="block mb-1">Modelo:</label>
+                            <input type="text" id="modelo" placeholder="Modelo" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Tipo de equipo -->
+                        <div>
+                            <label for="tipo-equipo" class="block mb-1">Tipo de equipo:</label>
+                            <select id="tipo-equipo" class="border border-gray-300 rounded p-2 w-full">
+                                <option>EQUIPOS DE MEDICIÓN</option>
+                                <option>VEHÍCULO</option>
+                            </select>
+                        </div>
+                        <!-- Ubicación -->
+                        <div>
+                            <label for="ubicacion" class="block mb-1">Ubicación:</label>
+                            <select id="ubicacion" class="border border-gray-300 rounded p-2 w-full">
+                                <option>OFICINA</option>
+                                <option>TALLER</option>
+                                <option>TERRENO</option>
+                                <!-- Additional options -->
+                            </select>
+                        </div>
+                        <!-- Coste -->
+                        <div>
+                            <label for="coste" class="block mb-1">Coste:</label>
+                            <input type="number" id="coste" placeholder="Coste" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Observaciones -->
+                        <div>
+                            <label for="observaciones" class="block mb-1">Observaciones:</label>
+                            <input type="text" id="observaciones" placeholder="Observaciones" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Fecha de compra -->
+                        <div>
+                            <label for="fecha-compra" class="block mb-1">Fecha de compra:</label>
+                            <input type="date" id="fecha-compra" placeholder="Fecha de compra" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Fecha de baja -->
+                        <div>
+                            <label for="fecha-baja" class="block mb-1">Fecha de baja:</label>
+                            <input type="date" id="fecha-baja" placeholder="Fecha de baja" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Encargado -->
+                        <div>
+                            <label for="encargado" class="block mb-1">Encargado:</label>
+                            <select id="encargado" class="border border-gray-300 rounded p-2 w-full">
+                                <option>Juan Perez</option>
+                                <option>Agustin Llano</option>
+                                <option>Rosa Melo</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección de reparaciones -->
+        <section class="mb-6">
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <h2 class="font-bold mb-4">REPARACIONES</h2>
+                <!-- FORMULARIO REPARACIONES -->
+                <form>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+                        <!-- Fecha de reparacion -->
+                        <div>
+                            <label for="fecha-reparacion" class="block mb-1">Fecha de reparación:</label>
+                            <input type="date" id="fecha-reparacion" placeholder="Fecha de reparación" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- causa -->
+                        <div>
+                            <label for="causa" class="block mb-1">Causa:</label>
+                            <input type="text" id="causa" placeholder="Causa" class="border border-gray-300 rounded p-2 w-full">
+                        </div>    
+                        <!-- operacion efectuada -->
+                        <div>
+                            <label for="operacion-efectuada" class="block mb-1">Operación efectuada:</label>
+                            <input type="text" id="operacion-efectuada" placeholder="Operación efectuada" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Responsable -->
+                        <div>
+                            <label for="responsable" class="block mb-1">Responsable:</label>
+                            <select id="responsable" class="border border-gray-300 rounded p-2 w-full">
+                                <option>Juan Perez</option>
+                                <option>Agustin Llano</option>
+                                <option>Rosa Melo</option>
+                            </select>
+                        </div>
+                        <!-- proveedor -->
+                        <div>
+                            <label for="proveedor" class="block mb-1">Proveedor:</label>
+                            <select id="proveedor" class="border border-gray-300 rounded p-2 w-full">
+                                <option>CAT</option>
+                                <option>Komatsu</option>
+                                <option>Mitsubishi</option>
+                            </select>
+                        </div>                        
+                        <!-- Coste -->
+                        <div>
+                            <label for="coste" class="block mb-1">Coste:</label>
+                            <input type="number" id="coste" placeholder="Coste" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                        <!-- Observaciones -->
+                        <div>
+                            <label for="observaciones" class="block mb-1">Observaciones:</label>
+                            <input type="text" id="observaciones" placeholder="Observaciones" class="border border-gray-300 rounded p-2 w-full">
+                        </div>
+                    <!-- CONFORMIDAD -->
+                    <div class="container">
+                        <h2>Resultado</h2>
+                        <label>
+                        <input type="radio" name="conformidad" value="conforme" class="option"> CONFORME
+                        </label>
+                        <label>
+                        <input type="radio" name="conformidad" value="no-conforme" class="option"> NO CONFORME
+                        </label>
+                    </div>                          
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección de reparaciones preventivas -->
+        <section class="mb-6">
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <h2 class="font-bold mb-4">PREVENTIVO</h2>
+                <!-- FORMULARIO REPARACIONES PREVENTIVAS -->
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">
+                    <!-- Fecha de revision -->
+                    <div>
+                        <label for="fecha-revision" class="block mb-1">Fecha de revisión:</label>
+                        <input type="date" id="fecha-revision" placeholder="Fecha de revisión" class="border border-gray-300 rounded p-2 w-full">
+                    </div> 
+                    <!-- operacion efectuada -->
+                    <div>
+                        <label for="operacion-efectuada" class="block mb-1">Operación efectuada:</label>
+                        <input type="text" id="operacion-efectuada" placeholder="Operación efectuada" class="border border-gray-300 rounded p-2 w-full">
+                    </div>
+                    <!-- Responsable -->
+                    <div>
+                        <label for="responsable" class="block mb-1">Responsable:</label>
+                        <select id="responsable" class="border border-gray-300 rounded p-2 w-full">
+                            <option>Juan Perez</option>
+                            <option>Agustin Llano</option>
+                            <option>Rosa Melo</option>
+                        </select>
+                    </div>
+                    <!-- proveedor -->
+                    <div>
+                        <label for="proveedor" class="block mb-1">Proveedor:</label>
+                        <select id="proveedor" class="border border-gray-300 rounded p-2 w-full">
+                            <option>CAT</option>
+                            <option>Komatsu</option>
+                            <option>Mitsubishi</option>
+                        </select>
+                    </div>                        
+                    <!-- Coste -->
+                    <div>
+                        <label for="coste" class="block mb-1">Coste:</label>
+                        <input type="number" id="coste" placeholder="Coste" class="border border-gray-300 rounded p-2 w-full">
+                    </div>
+                    <!-- Observaciones -->
+                    <div>
+                        <label for="observaciones" class="block mb-1">Observaciones:</label>
+                        <input type="text" id="observaciones" placeholder="Observaciones" class="border border-gray-300 rounded p-2 w-full">
+                    </div>                    
+                    <!-- CONFORMIDAD -->
+                    <div class="container">
+                        <h2>Resultado</h2>
+                        <label>
+                        <input type="radio" name="conformidad" value="conforme" class="option"> CONFORME
+                        </label>
+                        <label>
+                        <input type="radio" name="conformidad" value="no-conforme" class="option"> NO CONFORME
+                        </label>
+                    </div>                    
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección de calibraciones -->
+        <section class="mb-6">
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <h2 class="font-bold mb-4">CALIBRACIONES</h2>
+                <!-- FORMULARIO CALIBRACIONES -->
+                <form>
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-4">                   
+                    <!-- Fecha de Calibración -->
+                    <div>
+                        <label for="fecha-calibracion" class="block mb-1">Fecha de calibración:</label>
+                        <input type="date" id="fecha-calibracion" placeholder="Fecha de calibración" class="border border-gray-300 rounded p-2 w-full">
+                    </div> 
+                    <!-- numero de certificado -->
+                    <div>
+                        <label for="numero-certificado" class="block mb-1">Numero de certificado:</label>
+                        <input type="text" id="numero-certificado" placeholder="Numero de certificado" class="border border-gray-300 rounded p-2 w-full">
+                    </div>
+                    <!-- Responsable -->
+                    <div>
+                        <label for="responsable" class="block mb-1">Responsable:</label>
+                        <select id="responsable" class="border border-gray-300 rounded p-2 w-full">
+                            <option>Juan Perez</option>
+                            <option>Agustin Llano</option>
+                            <option>Rosa Melo</option>
+                        </select>
+                    </div>
+                    <!-- proveedor -->
+                    <div>
+                        <label for="proveedor" class="block mb-1">Proveedor:</label>
+                        <select id="proveedor" class="border border-gray-300 rounded p-2 w-full">
+                            <option>calibrax</option>
+                            <option>topocal</option>
+                            <option>calibrador</option>
+                        </select>
+                    </div>                        
+                    <!-- Coste -->
+                    <div>
+                        <label for="coste" class="block mb-1">Coste:</label>
+                        <input type="number" id="coste" placeholder="Coste" class="border border-gray-300 rounded p-2 w-full">
+                    </div>
+                    <!-- Observaciones -->
+                    <div>
+                        <label for="observaciones" class="block mb-1">Observaciones:</label>
+                        <input type="text" id="observaciones" placeholder="Observaciones" class="border border-gray-300 rounded p-2 w-full">
+                    </div>                    
+                    <!-- CONFORMIDAD -->
+                    <div class="container">
+                        <h2>Resultado</h2>
+                        <label>
+                        <input type="radio" name="conformidad" value="conforme" class="option"> CONFORME
+                        </label>
+                        <label>
+                        <input type="radio" name="conformidad" value="no-conforme" class="option"> NO CONFORME
+                        </label>
+                    </div>                    
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección de documentos -->
+        <section class="mb-6">
+            <div class="bg-white p-6 rounded-md shadow-md">
+                <h2 class="font-bold mb-4">DOCUMENTOS</h2>
+                <!-- Formulario de documentos -->
+                <form>
+                    <input type="file" id="fileInput" name="fileInput" accept=".pdf, .doc, .docx">
+                    <button type="button" onclick="uploadFile()">Subir Documento</button>
+                </form>
+                <p id="status"></p>
+            </div>
+        </section>
+
+        <!-- Botones de acción -->
+        <div class="flex justify-end gap-4">
+            <button class="bg-yellow-500 text-white rounded p-3">LIMPIAR CAMPOS</button>
+            <button class="bg-green-500 text-white rounded p-3">GUARDAR</button>
+        </div>
+    </div>
+
+</body>
+</html>
