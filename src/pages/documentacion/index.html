@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentación</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Container for the entire page -->
+    <div class="container mx-auto px-4">
+
+        <!-- Title -->
+        <h1 class="text-3xl font-semibold text-gray-700 p-4">Documentación</h1>
+
+        <!-- Filter Section -->
+        <div class="bg-white p-4 rounded-md shadow-md mb-4">
+            <div class="flex flex-wrap -mx-2">
+                <div class="px-2 w-full md:w-1/4 mb-2 md:mb-0">
+                    <input type="text" placeholder="Título" class="border border-gray-300 rounded py-2 px-4 w-full" />
+                </div>
+
+                <div class="px-2 w-full md:w-1/4 mb-2 md:mb-0">
+                    <select class="border border-gray-300 rounded py-2 px-4 w-full">
+                        <option value="">TODOS</option>
+                        <option value="">ACTA</option>
+                        <option value="">CIRCULAR</option>
+                        <option value="">FICHA</option>
+                        <option value="">FORMATO</option>
+                        <option value="">INSTRUCCIONES</option>
+                        <option value="">LEGALES</option>
+                        <option value="">MANUAL</option>
+                        <option value="">PLANOS</option>
+                        <option value="">PROCEDIMIENTOS</option>
+                        <option value="">PROTOCOLOS</option>
+                        <option value="">REGISTROS</option>
+                        <option value="">WORK-FLOW</option>
+                        <option value="">OTROS</option>
+                        <!-- Insert more options here -->
+                    </select>
+                </div>
+
+                <div class="px-2 w-full md:w-1/4 mb-2 md:mb-0">
+                    <select class="border border-gray-300 rounded py-2 px-4 w-full">
+                        <option value="">TODOS</option>
+                        <option value="">SERVIDOR</option>
+                        <!-- Insert more options here -->
+                    </select>
+                </div>
+                <div class="px-2 w-full md:w-1/4 mb-2 md:mb-0">
+                    <select class="border border-gray-300 rounded py-2 px-4 w-full">
+                        <option value="">TODOS</option>
+                        <option value="">EN VIGOR</option>
+                        <option value="">EN REVISION</option>
+                        <option value="">OBSOLETO</option>
+                        <!-- Insert more options here -->
+                    </select>
+                </div>
+                <div class="px-2 w-full md:w-1/4 mb-2 md:mb-0">
+                    <button class="bg-orange-500 text-white rounded py-2 px-4 w-full">BUSCAR</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Table Section -->
+        <div class="bg-white p-4 rounded-md shadow-md">
+            <table class="table-auto w-full">
+                <thead>
+                    <tr class="bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
+                        <th class="py-3 px-6 text-left">CÓDIGO</th>
+                        <th class="py-3 px-6 text-left">N° REV.</th>
+                        <th class="py-3 px-6 text-left">TÍTULO</th>
+                        <th class="py-3 px-6 text-left">TIPO</th>
+                        <th class="py-3 px-6 text-left">SOPORTE</th>
+                        <th class="py-3 px-6 text-left">ALMACENAMIENTO</th>
+                        <th class="py-3 px-6 text-left">T. RETENCIÓN</th>
+                        <th class="py-3 px-6 text-left">ESTADO</th>
+                        <th class="py-3 px-6 text-left">FECHA</th>
+                        <th class="py-3 px-6 text-left">ACCIONES</th>
+                    </tr>
+                </thead>
+                <tbody class="text-gray-600 text-sm font-light">
+                    <!-- Dynamic rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="flex justify-end space-x-2 mt-4">
+            <button class="bg-green-500 text-white rounded py-2 px-4">AÑADIR</button>
+            <button class="bg-red-500 text-white rounded py-2 px-4">GENERAR INFORME</button>
+        </div>
+
+    </div>
+
+</body>
+</html>
+

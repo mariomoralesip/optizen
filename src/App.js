@@ -1,17 +1,17 @@
-import { Section } from "./components/Section";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Page } from './components/Page';
+import { Sidebar } from './components/Sidebar';
+import { NoConformidades } from './pages/calidad/NoConformidades';
 
 function App() {
-  const secciones = [1, 2, 3, 4, 5];
+
   return (
-    <div>
-      <header className="App-header">
-        {secciones.map((seccion) => (
-          <Section>
-            <p>El contenido</p>
-            <p>bla blbla.</p>
-          </Section>
-        ))}
-      </header>
+    <div className='d-flex '>
+      <Sidebar/>
+
+      <Page title='Calidad'>
+          <NoConformidades/>
+        </Page>
     </div>
   );
 }

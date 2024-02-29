@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gestión de No Conformidades</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container my-5">
+    <div class="card shadow">
+      <div class="card-body">
+        <h1 class="card-title">Gestión de No Conformidades</h1>
+        <form id="gestionnoconformidades">
+          <div class="mb-3">
+            <label for="nombre_nc" class="form-label">Nombre del Documento:</label>
+            <input type="text" class="form-control" id="nombre_nc" name="nombre_nc" maxlength="70">
+          </div>
+
+          <div class="mb-3">
+            <label for="fecha_nc" class="form-label">Fecha del Documento:</label>
+            <input type="date" class="form-control" id="fecha_nc" name="fecha_nc">
+          </div>
+
+          <div class="mb-3">
+            <label for="codigo_nc" class="form-label">Código No conformidad:</label>
+            <input type="text" class="form-control" id="codigo_nc" name="codigo_nc" maxlength="70">
+          </div>
+
+          <div class="mb-3">
+            <label for="tipo_nc" class="form-label">Tipo:</label>
+            <select class="form-select" id="tipo_nc" name="tipo_nc">
+              <option value="ncr">NCR</option>
+              <option value="cr">cr</option>
+              <option value="otro">Otro</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="categoria_nc" class="form-label">Categoría:</label>
+            <select class="form-select" id="categoria_nc" name="categoria_nc">
+              <option value="calidad">Calidad</option>
+              <option value="topografia">Topografía</option>
+              <option value="construccion">Construcción</option>
+              <option value="otros">Otros</option>
+            </select>
+          </div>
+
+          <div class="mb-3">
+            <label for="descripcion_nc" class="form-label">Descripción de de la No conformidad:</label>
+            <input type="text" class="form-control" id="descripcion_nc" name="descripcion_nc" maxlength="100">
+          </div>
+
+          <div class="mb-3">
+            <label for="estatus" class="form-label">Estatus:</label>
+            <select class="form-select" id="estatus" name="estatus">
+              <option value="por_revisar">Por revisar</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="sin_contestar">Sin contestar</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-success">Registrar</button>
+          <a href="page2.html" class="btn btn-primary">Siguiente</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <form action="../../form-result.php" method="post" enctype="multipart/form-data" target="_blank" class="mt-4">
+    <div class="mb-3">
+      <label for="archivoSubido" class="form-label">Sube un archivo:</label>
+      <input type="file" class="form-control" id="archivoSubido" name="archivosubido">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar datos</button>
+  </form>
+
+  <script src="script.js" type="module"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+</html>
+
+<!-- agregar unas graficas y metricas -->

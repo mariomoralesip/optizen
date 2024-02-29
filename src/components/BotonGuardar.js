@@ -1,9 +1,8 @@
-function BotonGuardar(props) {
+import { Button } from 'react-bootstrap';
 
-  const showAlert = () => alert(props.mensaje || 'Guardado')
-
+function BotonGuardar() {
   return (
-     <button style={{background: props?.color || ''}} onClick={() => showAlert()}>Guardar</button>
+    <Button variant="primary">Primary</Button>
   );
 }
 
